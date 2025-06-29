@@ -1,0 +1,77 @@
+.elvimart-404 {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cbeeff, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.elvimart-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #90caf9;
+  border-radius: 50%;
+  filter: blur(200px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.elvimart-box {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(33, 150, 243, 0.15);
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.elvimart-box:hover {
+  transform: scale(1.01);
+}
+
+.elvimart-title {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #2196f3;
+  margin-bottom: 1rem;
+}
+
+.elvimart-message {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.elvimart-hint {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.elvimart-btn {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.elvimart-btn:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
